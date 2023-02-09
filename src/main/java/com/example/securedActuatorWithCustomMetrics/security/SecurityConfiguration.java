@@ -35,8 +35,8 @@ public class SecurityConfiguration {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.authorizeHttpRequests()
-                .requestMatchers("/beer/*").permitAll()
-                .requestMatchers("/actuator/metrics/beer.orders").hasRole(BEER_METRICS_READER_ROLE);
+                .requestMatchers("/beer/*").permitAll() // anyone can order beers :-)
+                .requestMatchers("/actuator/metrics/beer.orders").hasRole(BEER_METRICS_READER_ROLE); // only operator knows how many were ordered
         httpSecurity.httpBasic();
         httpSecurity.csrf().disable(); // should access only via REST API
         return httpSecurity.build();
