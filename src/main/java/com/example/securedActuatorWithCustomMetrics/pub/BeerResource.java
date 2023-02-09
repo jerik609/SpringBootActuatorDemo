@@ -1,4 +1,4 @@
-package com.example.securedActuatorWithCustomMetrics;
+package com.example.securedActuatorWithCustomMetrics.pub;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

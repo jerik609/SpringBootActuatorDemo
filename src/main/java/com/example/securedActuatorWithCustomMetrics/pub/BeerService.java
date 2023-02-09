@@ -1,9 +1,8 @@
-package com.example.securedActuatorWithCustomMetrics;
+package com.example.securedActuatorWithCustomMetrics.pub;
 
 import io.micrometer.core.instrument.Counter;
 import io.micrometer.core.instrument.MeterRegistry;
 import jakarta.annotation.PostConstruct;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
