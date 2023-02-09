@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-// POST: http://localhost:8080/beer/light
-
 @RestController
 @RequestMapping("/beer")
 public class BeerResource {

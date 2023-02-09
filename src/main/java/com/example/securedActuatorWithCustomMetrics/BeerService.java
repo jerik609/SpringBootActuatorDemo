@@ -4,12 +4,11 @@ import io.micrometer.core.instrument.Counter;
 import io.micrometer.core.instrument.MeterRegistry;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-// GET: http://localhost:8080/actuator/metrics/beer.orders?tag=type:light
-
-@Component
+@Service
 public class BeerService {
     private final MeterRegistry meterRegistry;
 
